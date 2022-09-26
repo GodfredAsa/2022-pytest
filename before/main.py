@@ -1,6 +1,6 @@
-from pay.order import LineItem, Order
-from pay.payment import pay_order
 
+from before.pay.order import Order, LineItem
+from before.pay.payment import pay_order
 
 def main():
     # Test card number: 1249190007575069
