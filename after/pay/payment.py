@@ -1,5 +1,5 @@
-from pay.order import Order
-from pay.processor import PaymentProcessor
+from after.pay.order import Order
+from after.pay.processor import PaymentProcessor
 
 
 def pay_order(order: Order):

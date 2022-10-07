@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from enum import Enum
 
+from typing import List
+
 
 class OrderStatus(Enum):
     OPEN = "open"
@@ -20,7 +22,7 @@ class LineItem:
 
 @dataclass
 class Order:
-    line_items: list[LineItem] = field(default_factory=list)
+    line_items: List[LineItem] = field(default_factory=list)
     status: OrderStatus = OrderStatus.OPEN
 
     @property
